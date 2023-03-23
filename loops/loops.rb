@@ -24,4 +24,17 @@ def print_array_fruits()
         puts "#{fruit}"
     end
 end
-print_array_fruits()
+# print_array_fruits()
+
+# Verificar e imprimir a existência de um elemento especifico presente ou não no array
+def print_exists_fruits()
+    fruits = ["Apple", "Watermelon", "Orange", "Banana", "Pineapple"]
+    fruit = "Orange"
+    if fruits.include?(fruit) #Verificando se Apple está presente no array fruits
+        puts "A fruta : #{fruit} está presente no array"
+    else 
+        puts "A fruta : #{fruit} não está presente no array"
+    end
+end
+print_exists_fruits()
+
