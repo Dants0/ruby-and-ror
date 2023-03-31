@@ -10,4 +10,6 @@ class Person
     def say_hello
         puts "Hello my name is #{@first_name} and my name is #{@last_name} and i have #{@age} years old."
     end
+
+    
 end
