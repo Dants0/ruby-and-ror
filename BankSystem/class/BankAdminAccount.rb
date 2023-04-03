@@ -14,4 +14,8 @@ class BankAdminAccount
     def all_balance_accounts
         BankAccount.all_balance_accounts
     end
+
+    def all_accounts_created
+        BankAccount.all_accounts_created
+    end
 end

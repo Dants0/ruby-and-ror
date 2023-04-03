@@ -24,7 +24,7 @@ class BankAccount
     def withdraw_amount(amount)
         if @balance >= amount
             @balance -= amount
-            puts "Saque realizado de #{amount}"
+            puts "Saque realizado de #{amount} da conta #{@account_number}"
         else
             puts "Sem saldo para saque"
         end
@@ -36,6 +36,14 @@ class BankAccount
             total_balance += account.balance
         end
         total_balance
+    end
+
+    def self.all_accounts_created
+        total_accounts = []
+        @@all_accounts.each do |account|
+            total_accounts << account.first_name
+        end
+        total_accounts
     end
 end
 
