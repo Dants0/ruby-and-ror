@@ -18,15 +18,20 @@ class Remoter < ControllRemote
         desligar_tv
     end
 
-    def aumentar_vol
-        aumentar_volume
+    def aumentar_vol(vol)
+        vol += 1
     end
 end
 
 tv_controllremote = Remoter.new("Preto", "Philips", 2)
 
+tv_controllremote_2 = Remoter.new("Branco", "Samsung", 2)
+
 tv_controllremote.descrever_tv
+tv_controllremote_2.descrever_tv
 
 tv_controllremote.turn_on
 
-tv_controllremote.aumentar_vol
+volume = 5
+new_volume = tv_controllremote.aumentar_vol(volume)
+puts new_volume

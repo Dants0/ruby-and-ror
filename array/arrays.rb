@@ -1,3 +1,5 @@
+require 'colorize'
+
 # array_names = [
 #     {
 #         id: 1,
@@ -19,8 +21,12 @@
 
 # puts array_names
 
-array = [2,5,6,1,3]
+# array = [2,5,6,1,3]
 
-for i in array
-    puts i
+# for i in array
+#     puts i
+# end
+
+for i in 0..5
+    puts 'AA'.colorize(:blue)
 end
